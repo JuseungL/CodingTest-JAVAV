@@ -9,9 +9,14 @@ src/main/java/com/juseungl/codingtestwithjava 디렉토리 아래에는 다양�
 각 하위 디렉토리는 여러 코딩 테스트 주제를 기준으로 구성되어 있으며, 각 디렉토리에는 해당 주제에 맞는 문제들이 포함되어 있습니다.
 
 ## 공부한 주제
+- 기본 입출력
+  - Scanner
+  - BufferReader
+  - StringBuilder
 - 기본적인 자료구조
   - Array(배열)
   - Collection Framework (ArrayList, LinkedList)
   - Stack, Queue, Deque, Priority Queue (Heap)
+- 정렬
   - Sorting, Comparator, Comparable
-  - 
+  
