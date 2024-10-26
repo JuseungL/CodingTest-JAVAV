@@ -33,9 +33,9 @@ public class ProgrammersStackQueue2 {
             }
         }
         answer.add(count); // 마지막 count 담기
-        for (int a:answer) {
-            System.out.println(a);
-        }
+//        for (int a:answer) {
+//            System.out.println(a);
+//        }
         return answer.stream().mapToInt(i -> i).toArray();
     }
 }

@@ -1,7 +1,6 @@
 package com.juseungl.codingtestwithjava;
 
-import com.juseungl.codingtestwithjava.StackQueue.ProgrammersStackQueue1;
-import com.juseungl.codingtestwithjava.StackQueue.ProgrammersStackQueue2;
+import com.juseungl.codingtestwithjava.StackQueue.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -20,6 +19,18 @@ public class CodingTestWithJavaApplication {
         int[] progresses = {93, 30, 55, 30};
         int[] speeds = {1, 30, 5, 5};
         programmersStackQueue2.solution(progresses, speeds);
-    }
 
+        ProgrammersStackQueue3 programmersStackQueue3 = new ProgrammersStackQueue3();
+        String s = "(())";
+        programmersStackQueue3.solution(s);
+
+        ProgrammersStackQueue4 programmersStackQueue4 = new ProgrammersStackQueue4();
+        int[] priorities = {2, 1, 3, 2};
+        int location = 2;
+        programmersStackQueue4.solution(priorities, location);
+
+        ProgrammersStackQueue6 programmersStackQueue6 = new ProgrammersStackQueue6();
+        int[] prices = {1, 2, 3, 2, 3};
+        programmersStackQueue6.solution(prices);
+    }
 }
