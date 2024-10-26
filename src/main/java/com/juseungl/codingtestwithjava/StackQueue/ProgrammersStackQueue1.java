@@ -1,7 +1,7 @@
-package com.juseungl.codingtestwithjava;
+package com.juseungl.codingtestwithjava.StackQueue;
 import java.util.*;
-public class ProgrammersStackQueue {
-    public int[] question1(int []arr) {
+public class ProgrammersStackQueue1 {
+    public int[] solution(int []arr) {
 
         Stack<Integer> st = new Stack<>();
         st.push(arr[0]);
