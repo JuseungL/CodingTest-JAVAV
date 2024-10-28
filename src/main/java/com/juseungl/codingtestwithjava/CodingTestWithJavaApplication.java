@@ -1,5 +1,8 @@
 package com.juseungl.codingtestwithjava;
 
+import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap1;
+import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap2;
+import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap3;
 import com.juseungl.codingtestwithjava.StackQueue.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,5 +35,18 @@ public class CodingTestWithJavaApplication {
         ProgrammersStackQueue6 programmersStackQueue6 = new ProgrammersStackQueue6();
         int[] prices = {1, 2, 3, 2, 3};
         programmersStackQueue6.solution(prices);
+
+        ProgrammersHeap1 programmersHeap1 = new ProgrammersHeap1();
+        int[] scovile = {1, 2, 3, 9, 10, 12};
+        int k = 7;
+        programmersHeap1.solution(scovile, k);
+
+        ProgrammersHeap2 programmersHeap2 = new ProgrammersHeap2();
+        int[][] jobs = { {0, 3}, {1, 9}, {2, 6} };
+        programmersHeap2.solution(jobs);
+
+        ProgrammersHeap3 programmersHeap3 = new ProgrammersHeap3();
+        String[] operations = {"I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"};
+        programmersHeap3.solution(operations);
     }
 }
