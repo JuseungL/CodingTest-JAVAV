@@ -1,5 +1,7 @@
 package com.juseungl.codingtestwithjava;
 
+import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash1;
+import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash2;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap1;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap2;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap3;
@@ -48,5 +50,14 @@ public class CodingTestWithJavaApplication {
         ProgrammersHeap3 programmersHeap3 = new ProgrammersHeap3();
         String[] operations = {"I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"};
         programmersHeap3.solution(operations);
+
+        ProgrammersHash1 programmersHash1 = new ProgrammersHash1();
+        int[] nums = {3,3,3,2,2,4};
+        programmersHash1.solution(nums);
+
+        ProgrammersHash2 programmersHash2 = new ProgrammersHash2();
+        String[] participant = {"leo", "kiki", "eden"};
+        String[] completion = {"eden", "kiki"};
+        programmersHash2.solution(participant, completion);
     }
 }
