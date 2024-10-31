@@ -56,8 +56,8 @@ public class CodingTestWithJavaApplication {
         programmersHash1.solution(nums);
 
         ProgrammersHash2 programmersHash2 = new ProgrammersHash2();
-        String[] participant = {"leo", "kiki", "eden"};
-        String[] completion = {"eden", "kiki"};
+        String[] participant = {"mislav", "stanko", "mislav", "ana"};
+        String[] completion = {"stanko", "ana", "mislav"};
         programmersHash2.solution(participant, completion);
     }
 }

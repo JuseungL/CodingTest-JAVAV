@@ -1,19 +1,25 @@
 package com.juseungl.codingtestwithjava.ProgrammersHash;
 
-import java.util.LinkedList;
+import java.util.*;
 
 public class ProgrammersHash2 {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
-        LinkedList<String> participants = new LinkedList<>();
+        HashMap<String,Integer> hm = new HashMap<>();
+
         for (String p:participant) {
-            participants.add(p);
+            hm.put(p, hm.getOrDefault(p,0) + 1);
         }
 
-        for (String c: completion) {
-            participants.remove(c);
+        for (String c:completion){
+            hm.put(c,hm.get(c)-1);
         }
-//        System.out.println(participants.pop());
-        return participants.pop();
+
+        for (String key:hm.keySet()) {
+            if (hm.get(key) != 0) {
+                answer = key;
+            }
+        }
+        return answer;
     }
 }
