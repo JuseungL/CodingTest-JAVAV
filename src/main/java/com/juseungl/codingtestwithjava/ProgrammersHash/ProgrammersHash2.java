@@ -11,6 +11,8 @@ public class ProgrammersHash2 {
          * HashMap은 get, put, getOrDefault, remove, containsKey 등의 메소드는 O(1)의 상수 시간복잡도
          * 단, key가 아닌 Value를 이용한 탐색, containsValue 메소드의 경우,
          * Hash Function을 통해 index를 찾아 직접접근이 불가하기 때문에 O(n)의 시간복잡도를 갖게 된다.
+         *
+         * 따라서 아래 코드는 시간복잡도가 O(n)이고 List를 사용했을때는 O(n^2)였다.
          */
         String answer = "";
         HashMap<String,Integer> hm = new HashMap<>();

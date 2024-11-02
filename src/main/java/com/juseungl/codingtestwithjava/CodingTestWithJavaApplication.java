@@ -1,7 +1,11 @@
 package com.juseungl.codingtestwithjava;
 
+import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF1;
+import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF2;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash1;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash2;
+import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash3;
+import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash4;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap1;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap2;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap3;
@@ -59,5 +63,21 @@ public class CodingTestWithJavaApplication {
         String[] participant = {"mislav", "stanko", "mislav", "ana"};
         String[] completion = {"stanko", "ana", "mislav"};
         programmersHash2.solution(participant, completion);
+
+        ProgrammersHash3 programmersHash3 = new ProgrammersHash3();
+        String[] phone_book = {"119", "97674223", "1195524421"};
+        programmersHash3.solution(phone_book);
+
+        ProgrammersHash4 programmersHash4 = new ProgrammersHash4();
+        String[][] clothes = {{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}};
+        programmersHash4.solution(clothes);
+
+        ProgrammersBF1 programmersBF1 = new ProgrammersBF1();
+        int[][] sizes = { {60, 50}, {30, 70}, {60, 30}, {80, 40} };
+        programmersBF1.solution(sizes);
+
+        ProgrammersBF2 programmersBF2 = new ProgrammersBF2();
+        int[] answers = {1,2,3,4,5};
+        programmersBF2.solution(answers);
     }
 }
