@@ -3,6 +3,7 @@ package com.juseungl.codingtestwithjava;
 import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF1;
 import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF2;
 import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF3;
+import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF4;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash1;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash2;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash3;
@@ -84,5 +85,10 @@ public class CodingTestWithJavaApplication {
         ProgrammersBF3 programmersBF3 = new ProgrammersBF3();
         String numbers = "17";
         programmersBF3.solution(numbers);
+
+        ProgrammersBF4 programmersBF4 = new ProgrammersBF4();
+        int brown = 24;
+        int yellow = 24;
+        programmersBF4.solution(brown,yellow);
     }
 }
