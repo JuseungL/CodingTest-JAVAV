@@ -1,9 +1,6 @@
 package com.juseungl.codingtestwithjava;
 
-import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF1;
-import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF2;
-import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF3;
-import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF4;
+import com.juseungl.codingtestwithjava.BruteForce.*;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash1;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash2;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash3;
@@ -90,5 +87,11 @@ public class CodingTestWithJavaApplication {
         int brown = 24;
         int yellow = 24;
         programmersBF4.solution(brown,yellow);
+
+        ProgrammersBF5 programmersBF5 = new ProgrammersBF5();
+        int k5 = 80;
+        int[][] dungenous = {{80,20},{50,40},{30,10}};
+        programmersBF5.solution(k5,dungenous);
+
     }
 }
