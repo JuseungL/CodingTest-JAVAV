@@ -2,6 +2,7 @@ package com.juseungl.codingtestwithjava;
 
 import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF1;
 import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF2;
+import com.juseungl.codingtestwithjava.BruteForce.ProgrammersBF3;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash1;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash2;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash3;
@@ -77,7 +78,11 @@ public class CodingTestWithJavaApplication {
         programmersBF1.solution(sizes);
 
         ProgrammersBF2 programmersBF2 = new ProgrammersBF2();
-        int[] answers = {1,2,3,4,5};
+        int[] answers = {1,3,2,4,2};
         programmersBF2.solution(answers);
+
+        ProgrammersBF3 programmersBF3 = new ProgrammersBF3();
+        String numbers = "17";
+        programmersBF3.solution(numbers);
     }
 }
