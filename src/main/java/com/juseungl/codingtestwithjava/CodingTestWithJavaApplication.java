@@ -1,6 +1,7 @@
 package com.juseungl.codingtestwithjava;
 
 import com.juseungl.codingtestwithjava.BfsDfs.ProgrammersBfs2;
+import com.juseungl.codingtestwithjava.BfsDfs.ProgrammersBfs3;
 import com.juseungl.codingtestwithjava.BinarySearch.ProgrammersBinarySearch1;
 import com.juseungl.codingtestwithjava.BruteForce.*;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash1;
@@ -117,5 +118,10 @@ public class CodingTestWithJavaApplication {
         ProgrammersBfs2 programmersBfs2 = new ProgrammersBfs2();
         int[][] computers = {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}};
         programmersBfs2.solution(3,computers);
+
+        ProgrammersBfs3 programmersBfs3 = new ProgrammersBfs3();
+        int[][] array = {{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}};
+        programmersBfs3.solution(array);
+
     }
 }
