@@ -1,5 +1,7 @@
 package com.juseungl.codingtestwithjava;
 
+import com.juseungl.codingtestwithjava.BfsDfs.ProgrammersBfs2;
+import com.juseungl.codingtestwithjava.BinarySearch.ProgrammersBinarySearch1;
 import com.juseungl.codingtestwithjava.BruteForce.*;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash1;
 import com.juseungl.codingtestwithjava.ProgrammersHash.ProgrammersHash2;
@@ -9,6 +11,7 @@ import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap1;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap2;
 import com.juseungl.codingtestwithjava.ProgrammersHeap.ProgrammersHeap3;
 import com.juseungl.codingtestwithjava.StackQueue.*;
+import com.juseungl.codingtestwithjava.BfsDfs.ProgrammersDfs1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -101,5 +104,18 @@ public class CodingTestWithJavaApplication {
         String word = "AAAAE";
         programmersBF7.solution(word);
 
+        ProgrammersBinarySearch1 programmersBinarySearch1 = new ProgrammersBinarySearch1();
+        int n = 6;
+        int[] times = {7,10};
+        programmersBinarySearch1.solution(n,times);
+
+        ProgrammersDfs1 programmersBfs1 = new ProgrammersDfs1();
+        int[] numbers1 = {1,1,1,1,1};
+        int target = 3;
+        programmersBfs1.solution(numbers1, target);
+
+        ProgrammersBfs2 programmersBfs2 = new ProgrammersBfs2();
+        int[][] computers = {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}};
+        programmersBfs2.solution(3,computers);
     }
 }
