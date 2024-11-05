@@ -93,5 +93,13 @@ public class CodingTestWithJavaApplication {
         int[][] dungenous = {{80,20},{50,40},{30,10}};
         programmersBF5.solution(k5,dungenous);
 
+        ProgrammersBF6 programmersBF6 = new ProgrammersBF6();
+        int[][] input = {{1, 3}, {2, 3}, {3, 4}, {4, 5}, {4, 6}, {4, 7}, {7, 8}, {7, 9}};
+        programmersBF6.solution(9, input);
+
+        ProgrammersBF7 programmersBF7 = new ProgrammersBF7();
+        String word = "AAAAE";
+        programmersBF7.solution(word);
+
     }
 }
